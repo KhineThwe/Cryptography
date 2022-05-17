@@ -24,10 +24,6 @@ def encryptMessage(key , message) :
 
 
 def decryptMessage(key , message) :
-	"""
-	>>> decryptMessage(6, 'Hlia rDsahrij')
-	'Harshil Darji'
-	"""
 	numCols = math.ceil(len(message) / key)
 	numRows = key
 	numShadedBoxes = (numCols * numRows) - len(message)
